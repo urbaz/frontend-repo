@@ -688,7 +688,7 @@ const handleMedicationSubmit = async (e) => {
                       </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
-                      {goats.slice(0, 3).map(goat => (
+                      {goats.map(goat => (
                         <tr key={goat.id} className="hover:bg-gray-50">
                           <td className="px-4 py-2 whitespace-nowrap">
                             <div className="flex items-center">
