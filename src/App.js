@@ -689,9 +689,9 @@ const handleMedicationSubmit = async (e) => {
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
                       {[...goats]
-                        .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
-                        .slice(0, 10)
-                        .map(goat => (
+  .sort((a, b) => b.id - a.id)
+  .slice(0, 10)
+  .map(goat => (
                           <tr key={goat.id} className="hover:bg-gray-50">
                             <td className="px-4 py-2 whitespace-nowrap">
                               <div className="flex items-center">
